@@ -1,4 +1,4 @@
-from FallenRobot import pbot as app
+from MyraRobot import pbot as app
 
 
 async def member_permissions(chat_id: int, user_id: int):
