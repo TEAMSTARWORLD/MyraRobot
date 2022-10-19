@@ -2,7 +2,7 @@ import io
 import os
 
 import requests
-from FallenRobot import SUPPORT_CHAT, dispatcher, pbot
+from MyraRobot import SUPPORT_CHAT, dispatcher, pbot
 from PIL import Image
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
