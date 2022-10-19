@@ -2,19 +2,19 @@ import html
 import re
 from typing import Optional
 
-from FallenRobot import TIGERS, WOLVES, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.helper_funcs.alternate import send_message
-from FallenRobot.modules.helper_funcs.chat_status import (
+from MyraRobot import TIGERS, WOLVES, dispatcher
+from MyraRobot.modules.connection import connected
+from MyraRobot.modules.helper_funcs.alternate import send_message
+from MyraRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from FallenRobot.modules.helper_funcs.string_handling import extract_time
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql import antiflood_sql as sql
-from FallenRobot.modules.sql.approve_sql import is_approved
+from MyraRobot.modules.helper_funcs.string_handling import extract_time
+from MyraRobot.modules.log_channel import loggable
+from MyraRobot.modules.sql import antiflood_sql as sql
+from MyraRobot.modules.sql.approve_sql import is_approved
 from telegram import Chat, ChatPermissions, Message, Update, User
 from telegram.error import BadRequest
 from telegram.ext import (
