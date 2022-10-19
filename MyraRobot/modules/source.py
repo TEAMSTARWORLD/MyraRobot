@@ -1,7 +1,7 @@
 from platform import python_version as y
 
-from FallenRobot import OWNER_USERNAME, dispatcher
-from FallenRobot import pbot as client
+from MyraRobot import OWNER_USERNAME, dispatcher
+from MyraRobot import pbot as client
 from pyrogram import __version__ as z
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -14,16 +14,16 @@ ANON = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"
 @client.on_message(filters.command(["repo", "source"]))
 async def repo(client, message):
     await message.reply_photo(
-        photo=ANON,
+        photo=STAR,
         caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](tg://user?id=1356469075)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [𝗦𝗧𝝙𝗥𝗪𝗢𝗥𝗟𝗗](tg://user?id=5595023466)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
 **» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**ꜰᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+**ᴍʏʀᴀ ✘ ʀᴏʙᴏᴛ sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -33,7 +33,7 @@ async def repo(client, message):
                     ),
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •",
-                        url="https://github.com/AnonymousR1025/FallenRobot",
+                        url="https://github.com",
                     ),
                 ]
             ]
