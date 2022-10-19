@@ -1,9 +1,9 @@
-# © @AnonymousBoy1025
+# © @TEAMSTARWORLD
 import sys
 import traceback
 from functools import wraps
 
-from FallenRobot import SUPPORT_CHAT, pbot
+from MyraRobot import SUPPORT_CHAT, pbot
 
 
 def split_limits(text):
