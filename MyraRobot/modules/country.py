@@ -1,8 +1,8 @@
 import flag
 from countryinfo import CountryInfo
-from FallenRobot import dispatcher
-from FallenRobot import telethn as borg
-from FallenRobot.events import register
+from MyraRobot import dispatcher
+from MyraRobot import telethn as borg
+from MyraRobot.events import register
 
 
 @register(pattern="^/country (.*)")
