@@ -1,9 +1,9 @@
 import logging
 import time
 
-from FallenRobot import DRAGONS as SUDO_USERS
-from FallenRobot import pbot
-from FallenRobot.modules.sql import forceSubscribe_sql as sql
+from MyraRobot import DRAGONS as SUDO_USERS
+from MyraRobot import pbot
+from MyraRobot.modules.sql import forceSubscribe_sql as sql
 from pyrogram import filters
 from pyrogram.errors.exceptions.bad_request_400 import (
     ChatAdminRequired,
