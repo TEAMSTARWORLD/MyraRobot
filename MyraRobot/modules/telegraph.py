@@ -1,15 +1,15 @@
 import os
 from datetime import datetime
 
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MyraRobot import telethn as tbot
+from MyraRobot.events import register
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
 Anonymous = "Fallen"
 TMP_DOWNLOAD_DIRECTORY = "./"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=Anonymous)
+r = telegraph.create_account(short_name=Star)
 auth_url = r["auth_url"]
 
 
