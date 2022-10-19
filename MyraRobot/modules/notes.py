@@ -3,13 +3,13 @@ import re
 from io import BytesIO
 from typing import Optional
 
-import FallenRobot.modules.sql.notes_sql as sql
-from FallenRobot import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from FallenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from FallenRobot.modules.helper_funcs.msg_types import get_note_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+import MyraRobot.modules.sql.notes_sql as sql
+from MyraRobot import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
+from MyraRobot.modules.disable import DisableAbleCommandHandler
+from MyraRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from MyraRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MyraRobot.modules.helper_funcs.msg_types import get_note_type
+from MyraRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
