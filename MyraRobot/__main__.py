@@ -112,11 +112,11 @@ buttons = [
 HELP_STRINGS = f"""
 *» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
 
-➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.
-➲ /donate : sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.
+➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ .
+➲ /donate : sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ .
 ➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
-  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ."""
+  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ  ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
+  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ  ᴍᴏᴅᴜʟᴇꜱ."""
 
 DONATE_STRING = """ʜᴇʏ ʙᴀʙʏ,
   ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
@@ -134,7 +134,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("FallenRobot.modules." + module_name)
+    imported_module = importlib.import_module("MyraRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -228,7 +228,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ :</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -307,7 +307,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ​​* *{}* :\n".format(
+                "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ  * *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -357,9 +357,9 @@ def help_button(update, context):
 
 
 @run_async
-def Fallen_about_callback(update: Update, context: CallbackContext):
+def Myra_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "fallen_":
+    if query.data == "Myra_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {BOT_NAME}*"
@@ -382,7 +382,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                            text="sᴜᴩᴩᴏʀᴛ", callback_data="Myra_support"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
@@ -398,12 +398,12 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="◁", callback_data="Myra_back"),
                     ],
                 ]
             ),
         )
-    elif query.data == "fallen_support":
+    elif query.data == "Myra_support":
         query.message.edit_text(
             text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {BOT_NAME} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {BOT_NAME}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
@@ -433,7 +433,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "fallen_back":
+    elif query.data == "Myra_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -464,7 +464,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 
 
 {BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/TEAMSTARWORLD/MyraRobot/blob/master/LICENSE).
-© 2022 - 2023 [@ᴅᴇᴠɪʟsʜᴇᴀᴠᴇɴᴍғ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
+© 2022 - 2023 [@ᴛᴇᴀᴄʜ_ᴛᴇᴀᴍᴏᴘ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -498,7 +498,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ​",
+                                text="ʜᴇʟᴘ ",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -692,7 +692,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="sᴇᴛᴛɪɴɢs​",
+                                text="sᴇᴛᴛɪɴɢs ",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -720,7 +720,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 1356469075 and DONATION_LINK:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {BOT_NAME} sᴏʀᴄᴇ ᴄᴏᴅᴇ ɪs [ᴀɴᴏɴʏᴍᴏᴜs](https://t.me/anonymous_was_bot)."
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {BOT_NAME} sᴏʀᴄᴇ ᴄᴏᴅᴇ ɪs [sᴛᴀʀᴡᴏʀʟᴅ](https://t.me/TG_STARWORLD)."
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
@@ -797,7 +797,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        Fallen_about_callback, pattern=r"fallen_"
+        Myra_about_callback, pattern=r"Myra_"
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
