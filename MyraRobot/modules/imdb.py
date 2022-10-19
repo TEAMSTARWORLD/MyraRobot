@@ -1,5 +1,5 @@
 import requests
-from FallenRobot import pbot
+from MyraRobot import pbot
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
