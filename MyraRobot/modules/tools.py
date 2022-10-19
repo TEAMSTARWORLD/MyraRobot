@@ -1,4 +1,4 @@
-# © @AnonymousBoy1025
+# © @TEAMSTARWORLD
 
 __mod_name__ = "Tᴏᴏʟs"
 
