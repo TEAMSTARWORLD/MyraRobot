@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from FallenRobot import OWNER_ID
-from FallenRobot import OWNER_USERNAME as uWu
-from FallenRobot import START_IMG, SUPPORT_CHAT, pbot
-from FallenRobot.utils.errors import capture_err
+from MyraRobot import OWNER_ID
+from MyraRobot import OWNER_USERNAME as uWu
+from MyraRobot import START_IMG, SUPPORT_CHAT, pbot
+from MyraRobot.utils.errors import capture_err
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -107,7 +107,7 @@ async def close_send_photo(_, CallbackQuery):
 
 
 __help__ = """
-*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ*
+*ғᴏʀ ʀᴇᴩᴏʀᴛɪɴɢ ᴀ ʙᴜɢ ɪɴ ᴍʏʀᴀ ✘ ʀᴏʙᴏᴛ*
  ❍ /bug *:* ᴛᴏ ʀᴇᴩᴏʀᴛ ᴀ ʙᴜɢ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.
 """
 __mod_name__ = "Bᴜɢ"
