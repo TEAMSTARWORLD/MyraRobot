@@ -1,6 +1,6 @@
 from io import BytesIO
 
-from FallenRobot import aiohttpsession as aiosession
+from MyraRobot import aiohttpsession as aiosession
 
 
 async def make_carbon(code):
