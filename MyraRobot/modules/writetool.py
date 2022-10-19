@@ -1,11 +1,11 @@
 import requests
-from FallenRobot import BOT_NAME, BOT_USERNAME
-from FallenRobot import pbot as fallen
+from MyraRobot import BOT_NAME, BOT_USERNAME
+from MyraRobot import pbot as fallen
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-@fallen.on_message(filters.command("write"))
+@Myra.on_message(filters.command("write"))
 async def handwrite(_, message: Message):
     if not message.reply_to_message:
         text = message.text.split(None, 1)[1]
