@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from FallenRobot import TIME_API_KEY, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from MyraRobot import TIME_API_KEY, dispatcher
+from MyraRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
