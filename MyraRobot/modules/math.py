@@ -1,6 +1,5 @@
-from requests import request
-
 from FallenRobot.events import register
+from requests import request
 
 
 @register(pattern="^/math ?(.*)")
