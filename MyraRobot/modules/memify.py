@@ -1,11 +1,11 @@
 import os
 import textwrap
 
-from FallenRobot import telethn as bot
-from FallenRobot.events import register
+from MyraRobot import telethn as bot
+from MyraRobot.events import register
 from PIL import Image, ImageDraw, ImageFont
 
-Credit = "AnonymousBoy1025"
+Credit = "TEAMSTARWORLD"
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -33,7 +33,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "AnonymousBoy1025" in Credit:
+    if "TEAMSTARWORLD" in Credit:
         pass
 
     else:
@@ -68,7 +68,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./FallenRobot/resources/default.ttf"
+        fnt = "./MyraRobot/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
