@@ -1,8 +1,8 @@
 import asyncio
 
-from FallenRobot import OWNER_ID
-from FallenRobot import pbot as app
-from FallenRobot.helper_extra.dbfun import (
+from MyraRobot import OWNER_ID
+from MyraRobot import pbot as app
+from MyraRobot.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
     get_karmas,
