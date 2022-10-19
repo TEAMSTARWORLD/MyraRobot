@@ -1,7 +1,7 @@
 import threading
 
-from FallenRobot.modules.helper_funcs.msg_types import Types
-from FallenRobot.modules.sql import BASE, SESSION
+from MyraRobot.modules.helper_funcs.msg_types import Types
+from MyraRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 
 
