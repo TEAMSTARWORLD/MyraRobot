@@ -2,7 +2,7 @@ import threading
 import time
 from typing import Union
 
-from FallenRobot.modules.sql import BASE, SESSION
+from MyraRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
 
 
