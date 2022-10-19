@@ -1,7 +1,7 @@
-# © @AnonymousBoy1025
+# © @TEAMSTARWORLD
 import aiohttp
-from FallenRobot import pbot
-from FallenRobot.pyrogramee.errors import capture_err
+from MyraRobot import pbot
+from MyraRobot.pyrogramee.errors import capture_err
 from pyrogram import filters
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
