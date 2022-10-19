@@ -1,11 +1,11 @@
 import html
 import os
 
-from FallenRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.admin_rights import user_can_changeinfo
-from FallenRobot.modules.helper_funcs.alternate import send_message
-from FallenRobot.modules.helper_funcs.chat_status import (
+from MyraRobot import DRAGONS, dispatcher
+from MyraRobot.modules.disable import DisableAbleCommandHandler
+from MyraRobot.modules.helper_funcs.admin_rights import user_can_changeinfo
+from MyraRobot.modules.helper_funcs.alternate import send_message
+from MyraRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
     can_pin,
