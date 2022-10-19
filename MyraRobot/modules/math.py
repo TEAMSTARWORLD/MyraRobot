@@ -1,4 +1,4 @@
-from FallenRobot.events import register
+from MyraRobot.events import register
 from requests import request
 
 
