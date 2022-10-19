@@ -1,7 +1,7 @@
 import threading
 
-from FallenRobot import dispatcher
-from FallenRobot.modules.sql import BASE, SESSION
+from MyraRobot import dispatcher
+from MyraRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     BigInteger,
     Column,
