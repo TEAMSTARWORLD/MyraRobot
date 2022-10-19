@@ -1,4 +1,4 @@
-from FallenRobot import dispatcher
+from MyraRobot import dispatcher
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 from TruthDarePy import TD
