@@ -2,9 +2,9 @@ import html
 import os
 import re
 
-import FallenRobot.modules.sql.userinfo_sql as sql
+import MyraRobot.modules.sql.userinfo_sql as sql
 import requests
-from FallenRobot import (
+from MyraRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -14,14 +14,14 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot import telethn as FallenTelethonClient
-from FallenRobot.__main__ import STATS, TOKEN, USER_INFO
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
-from FallenRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot.modules.sql.afk_sql import check_afk_status, is_afk
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
-from FallenRobot.modules.sql.users_sql import get_user_num_chats
+from MyraRobot import telethn as FallenTelethonClient
+from MyraRobot.__main__ import STATS, TOKEN, USER_INFO
+from MyraRobot.modules.disable import DisableAbleCommandHandler
+from MyraRobot.modules.helper_funcs.chat_status import sudo_plus
+from MyraRobot.modules.helper_funcs.extraction import extract_user
+from MyraRobot.modules.sql.afk_sql import check_afk_status, is_afk
+from MyraRobot.modules.sql.global_bans_sql import is_user_gbanned
+from MyraRobot.modules.sql.users_sql import get_user_num_chats
 from telegram import (
     MAX_MESSAGE_LENGTH,
     InlineKeyboardButton,
@@ -323,10 +323,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/AnonAssociation/7"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/TEACH_TEAMOP"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/AnonAssociation/8"
+                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/TEACH_TEAMOP"
                             ),
                         ],
                     ]
