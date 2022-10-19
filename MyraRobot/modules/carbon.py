@@ -1,6 +1,6 @@
-from FallenRobot import pbot
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.functions import make_carbon
+from MyraRobot import pbot
+from MyraRobot.utils.errors import capture_err
+from MyraRobot.utils.functions import make_carbon
 from pyrogram import filters
 
 
