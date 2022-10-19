@@ -2,13 +2,13 @@ import inspect
 import re
 from pathlib import Path
 
-from FallenRobot import MONGO_DB_URI, telethn
+from MyraRobot import MONGO_DB_URI, telethn
 from pymongo import MongoClient
 from telethon import events
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["Anonymous"]
+db = client["STAR"]
 gbanned = db.gban
 
 
