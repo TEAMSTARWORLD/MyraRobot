@@ -1,8 +1,8 @@
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
 import threading
 
-from FallenRobot.modules.helper_funcs.msg_types import Types
-from FallenRobot.modules.sql import BASE, SESSION
+from MyraRobot.modules.helper_funcs.msg_types import Types
+from MyraRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 
 
