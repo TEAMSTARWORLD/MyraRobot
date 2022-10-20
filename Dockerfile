@@ -64,7 +64,7 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/FallenRobot
+# Copy Python Requirements to /root/MyraRobot
 RUN git clone https://github.com/TEAMSTARWORLD/MyraRobot /root/MyraRobot
 WORKDIR /root/MyraRobot
 
@@ -77,7 +77,7 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","FallenRobot"]
+CMD ["python3","-m","MyraRobot"]
 
 
 
