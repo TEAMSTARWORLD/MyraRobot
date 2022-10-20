@@ -12,8 +12,8 @@ from MyraRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.permissions import adminsOnly
+from MyraRobot.utils.errors import capture_err
+from MyraRobot.utils.permissions import adminsOnly
 from pyrogram import filters
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|\+69|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|thankyou|love|pro)$"
