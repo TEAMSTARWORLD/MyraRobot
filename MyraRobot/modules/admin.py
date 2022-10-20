@@ -13,11 +13,11 @@ from MyraRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from MyraRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.log_channel import loggable
+from MyraRobot.modules.log_channel import loggable
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
