@@ -19,7 +19,7 @@ from MyraRobot.modules.helper_funcs.string_handling import (
     markdown_to_html,
     split_quotes,
 )
-from FallenRobot.modules.sql import cust_filters_sql as sql
+from MyraRobot.modules.sql import cust_filters_sql as sql
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import (
