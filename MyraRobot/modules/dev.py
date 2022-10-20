@@ -4,7 +4,7 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import FallenRobot
+import MyraRobot
 from MyraRobot import dispatcher
 from MyraRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
