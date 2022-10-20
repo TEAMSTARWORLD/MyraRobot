@@ -1,13 +1,13 @@
 {
       "name": "Myra Robot",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://telegra.ph/file/72e135da30a1a349f2844.jpg",
+      "logo": "https://telegra.ph/file/06df9b4cc15a1ed7b0eec.jpg",
       "keywords": [
          "telegram",
          "sexy",
          "group",
          "manager",
-         "Fallen"
+         "Myra"
       ],   
    "repository": "https://github.com/TEAMSTARWORLD/MyraRobot",
    "stack": "heroku-20",
@@ -43,7 +43,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1356469075"
+         "value": "5595023466"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -90,7 +90,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Fallen Support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1356469075"
+         "value": "5595023466"
       },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
