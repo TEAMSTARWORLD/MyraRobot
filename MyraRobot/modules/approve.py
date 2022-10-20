@@ -2,7 +2,7 @@ import html
 
 import MyraRobot.modules.sql.approve_sql as sql
 from MyraRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from MyraRobot.modules.disable import DisableAbleCommandHandler
 from MyraRobot.modules.helper_funcs.chat_status import user_admin
 from MyraRobot.modules.helper_funcs.extraction import extract_user
 from MyraRobot.modules.log_channel import loggable
