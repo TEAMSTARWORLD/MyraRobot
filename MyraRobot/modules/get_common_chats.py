@@ -3,7 +3,7 @@ from time import sleep
 
 from MyraRobot import OWNER_ID, dispatcher
 from MyraRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot.modules.sql.users_sql import get_user_com_chats
+from MyraRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
