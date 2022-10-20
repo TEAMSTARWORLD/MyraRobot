@@ -6,10 +6,10 @@ from MyraRobot.events import register
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-Anonymous = "Fallen"
+Starworld = "Myra"
 TMP_DOWNLOAD_DIRECTORY = "./"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=Star)
+r = telegraph.create_account(short_name=Starworld)
 auth_url = r["auth_url"]
 
 
