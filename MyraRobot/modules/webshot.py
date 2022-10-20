@@ -2,10 +2,11 @@ from base64 import b64decode
 from inspect import getfullargspec
 from io import BytesIO
 
+from pyrogram import filters
+from pyrogram.types import Message
+
 from MyraRobot import pbot as app
 from MyraRobot.utils.post import post
-from MyraRobot import filters
-from MyraRobot.types import Message
 
 
 async def take_screenshot(url: str, full: bool = False):
