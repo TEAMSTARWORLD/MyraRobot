@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from MyraRobot import BOT_NAME, BOT_USERNAME
-from MyraRobot import pbot as fallen
+from MyraRobot import pbot as myra
 
 
 @myra.on_message(filters.command("write"))
