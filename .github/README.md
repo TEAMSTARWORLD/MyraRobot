@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://telegra.ph/file/71388cd5f98d669efc09f.jpg">
+</p>
+
 ━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
